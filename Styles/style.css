@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "robot", sans-serif;
+  /* background-color:red ; */
+}
+.img img {
+  height: 50px;
+}
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: red; */
+  color: white;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1em;
+}
+.K,
+.M {
+  color: orange;
+  font-weight: 800;
+  font-size: 1.3em;
+}
+.nom {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+}
+.navigation ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.6em;
+  list-style: none;
+}
+.accueil {
+  /* background-color: blue; */
+  /* color: white; */
+  background-image: url("/Images/Logo/bg_logo.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  align-content: center;
+}
+/* .accueil,.texte{
+    
+} */
+.propos {
+  background-color: green;
+  color: white;
+}
+.menu {
+  background-color: yellow;
+  color: white;
+}
+.temoignage {
+  background-color: purple;
+  color: white;
+}
+.expert {
+  background-color: orange;
+  color: white;
+}
+.contact {
+  background-color: black;
+  color: white;
+}

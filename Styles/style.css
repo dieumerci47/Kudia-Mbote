@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: "robot", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
   /* background-color:red ; */
 }
 .img img {
@@ -16,11 +18,18 @@ nav {
   color: white;
   width: 100%;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 1.2em;
+  padding: 7px;
+  flex-wrap: wrap;
+  z-index: 50;
+}
+nav a {
+  text-decoration: none;
+  color: white;
 }
 .K,
 .M {
-  color: orange;
+  color: #fb911f;
   font-weight: 800;
   font-size: 1.3em;
 }
@@ -40,6 +49,32 @@ nav {
   gap: 1.6em;
   list-style: none;
 }
+.navigation ul a {
+  &:hover {
+    color: #fb911f;
+    border-bottom-color: #fb911f;
+    border-bottom-style: solid;
+  }
+}
+.btn-reservation {
+  padding: 10px 20px;
+  background-color: #fb911f;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  &:hover {
+    background-color: #d87710;
+    transition: ease-out;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: 0.5s;
+  }
+}
+
+/* --------------------------------ACCUEIL----------------------------------------- */
 .accueil {
   /* background-color: blue; */
   /* color: white; */
@@ -48,18 +83,118 @@ nav {
   background-position: center;
   height: 100vh;
   align-content: center;
+  justify-items: center;
 }
-/* .accueil,.texte{
-    
-} */
+.texte h1 {
+  color: white;
+  text-align: center;
+}
+.texte_accueil {
+  display: flex;
+  color: white;
+
+  /* background-color: pink;  */
+  /* width: 50%; */
+}
+.texte {
+  width: 50%;
+  /* background-color: red;  */
+  padding: 20px;
+}
+
+/* --------------------------------À Propos----------------------------------------- */
 .propos {
-  background-color: green;
-  color: white;
+  /* background-color: green;
+  color: white; */
+  display: flex;
+  justify-content: space-around;
 }
+.propos .texte2 {
+  padding: 50px;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+.propos .texte2 h2 {
+  font-size: 2em;
+  font-weight: bolder;
+  /* background-color: red; */
+}
+.propos .texte2 p {
+  margin-top: 20px;
+  text-align: justify;
+  word-spacing: 5px;
+  font-size: 1.1em;
+}
+.propos .A {
+  color: #fb911f;
+}
+.description img {
+  width: 400px;
+  padding: 30px;
+  border-radius: 200px 100px;
+  margin-right: 50px;
+}
+
+/* --------------------------------MENU----------------------------------------- */
 .menu {
-  background-color: yellow;
-  color: white;
+  padding: 50px;
+  /* background-color: yellow;
+  color: white; */
 }
+.menu .texte-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: 5px;
+}
+.menu .texte-menu h2 {
+  font-size: 2em;
+}
+.menus img {
+  width: 320px;
+  height: 300px;
+  border-radius: 10%;
+}
+.menu .menus {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* grid-column: ; */
+}
+.menu .card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  align-items: center;
+  /* box-shadow: 3px 7px 8px black; */
+  box-shadow: 4px 5px 5px black;
+  padding: 5px;
+  gap: 10px;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: 3px 7px 8px black;
+  }
+}
+.menu .card h3 {
+  text-transform: uppercase;
+  color: #fb911f;
+  font-weight: bolder;
+  font-size: 1.4em;
+  padding: 3px;
+}
+.menu .card .prix {
+  font-weight: 500;
+  /* color: #fb911f; */
+  font-size: 1.5em;
+}
+.menu .card .prix .p {
+  font-weight: 900;
+}
+/* -.menu .card .prix-------------------------------TEMOIGNAGE----------------------------------------- */
 .temoignage {
   background-color: purple;
   color: white;

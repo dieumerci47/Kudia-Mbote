@@ -35,9 +35,9 @@
             <li><a href="#accueil">Accueil</a></li>
             <li><a href="#propos">À Propos</a></li>
             <li><a href="#menu">Menu</a></li>
+            <li><a href="#expert">Expert</a></li>
             <li><a href="#">Temoignage</a></li>
-            <li><a href="#">Expert</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="reservation">
@@ -59,8 +59,8 @@
           </p>
         </div>
         <div class="cta">
-          <button type="button">NOTRE MENU</button>
-          <button type="button">RESERVATION</button>
+          <button type="button" class="btn-cta men">NOTRE MENU</button>
+          <button type="button" class="btn-cta res">RESERVATION</button>
         </div>
       </section>
       <section class="propos" id="propos">
@@ -86,7 +86,13 @@
           </p>
         </div>
         <div class="description">
-          <img src="Images/poisson_riz.jpg" alt="" srcset="" />
+          <!-- <img src="Images/poisson_riz.jpg" alt="" srcset="" /> -->
+          <img
+            src="Images/Logo/restaurant-interieur.jpg"
+            alt=""
+            srcset=""
+            class="img1"
+          />
         </div>
       </section>
       <!-----------------------SECTION MENU---------------------------->
@@ -94,79 +100,262 @@
         <!--  <h1>Section 3</h1>
         <h2>Menu</h2> -->
         <div class="texte-menu">
-          <h2><span class="M">M</span>enu</h2>
+          <h2><span>M</span>enu</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="menus">
           <div class="card">
-            <img src="Images/haricot.jpg" alt="" srcset="" />
-            <h3>haricot</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
-              incidunt consequatur repudiandae dolores ullam odio rerum.
-              Asperiores, perferendis.
-            </p>
-            <p class="prix">
-              <span class="p">Prix: </span>800 <span>FCFA</span>
-            </p>
+            <div class="card-img">
+              <img src="Images/haricot.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-info">
+              <h3>haricot</h3>
+              <p class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Provident porro voluptate magnam atque minus assumenda dolor
+                magni nihil. Esse consequuntur tenetur earum ex ea quam dolores
+                illo est totam. Labore?
+              </p>
+              <p class="prix">
+                <span class="p">Prix: </span>800 <span>FCFA</span>
+              </p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="card">
+            <div class="card-img">
+              <img src="Images/trois_pieces2.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-info">
+              <h3>haricot</h3>
+              <p class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Provident porro voluptate magnam atque minus assumenda dolor
+                magni nihil. Esse consequuntur tenetur earum ex ea quam dolores
+                illo est totam. Labore?
+              </p>
+              <p class="prix">
+                <span class="p">Prix: </span>800 <span>FCFA</span>
+              </p>
+            </div>
           </div>
           <div class="card">
-            <img src="Images/riz_saka.jpg" alt="" srcset="" />
-            <h3>haricot</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
-              incidunt consequatur repudiandae dolores ullam odio rerum.
-              Asperiores, perferendis.
-            </p>
-            <p class="prix">800 <span>FCFA</span></p>
+            <div class="card-img">
+              <img src="Images/riz_compose.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-info">
+              <h3>haricot</h3>
+              <p class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Provident porro voluptate magnam atque minus assumenda dolor
+                magni nihil. Esse consequuntur tenetur earum ex ea quam dolores
+                illo est totam. Labore?
+              </p>
+              <p class="prix">
+                <span class="p">Prix: </span>800 <span>FCFA</span>
+              </p>
+            </div>
           </div>
           <div class="card">
-            <img src="Images/haricot.jpg" alt="" srcset="" />
-            <h3>haricot</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
-              incidunt consequatur repudiandae dolores ullam odio rerum.
-              Asperiores, perferendis.
-            </p>
-            <p class="prix">800 <span>FCFA</span></p>
+            <div class="card-img">
+              <img src="Images/banane_poulet.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-info">
+              <h3>haricot</h3>
+              <p class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Provident porro voluptate magnam atque minus assumenda dolor
+                magni nihil. Esse consequuntur tenetur earum ex ea quam dolores
+                illo est totam. Labore?
+              </p>
+              <p class="prix">
+                <span class="p">Prix: </span>800 <span>FCFA</span>
+              </p>
+            </div>
           </div>
           <div class="card">
-            <img src="Images/haricot.jpg" alt="" srcset="" />
-            <h3>haricot</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
-              incidunt consequatur repudiandae dolores ullam odio rerum.
-              Asperiores, perferendis.
-            </p>
-            <p class="prix">800 <span>FCFA</span></p>
+            <div class="card-img">
+              <img src="Images/poulet_sauce_riz.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-info">
+              <h3>haricot</h3>
+              <p class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Provident porro voluptate magnam atque minus assumenda dolor
+                magni nihil. Esse consequuntur tenetur earum ex ea quam dolores
+                illo est totam. Labore?
+              </p>
+              <p class="prix">
+                <span class="p">Prix: </span>800 <span>FCFA</span>
+              </p>
+            </div>
           </div>
           <div class="card">
-            <img src="Images/haricot.jpg" alt="" srcset="" />
-            <h3>haricot</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
-              incidunt consequatur repudiandae dolores ullam odio rerum.
-              Asperiores, perferendis.
-            </p>
-            <p class="prix">800 <span>FCFA</span></p>
+            <div class="card-img">
+              <img src="Images/br.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-info">
+              <h3>haricot</h3>
+              <p class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Provident porro voluptate magnam atque minus assumenda dolor
+                magni nihil. Esse consequuntur tenetur earum ex ea quam dolores
+                illo est totam. Labore?
+              </p>
+              <p class="prix">
+                <span class="p">Prix: </span>800 <span>FCFA</span>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="Images/riz_compose2.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-info">
+              <h3>haricot</h3>
+              <p class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Provident porro voluptate magnam atque minus assumenda dolor
+                magni nihil. Esse consequuntur tenetur earum ex ea quam dolores
+                illo est totam. Labore?
+              </p>
+              <p class="prix">
+                <span class="p">Prix: </span>800 <span>FCFA</span>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="Images/riz_salade.jpg" alt="" srcset="" />
+            </div>
+            <div class="card-info">
+              <h3>haricot</h3>
+              <p class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Provident porro voluptate magnam atque minus assumenda dolor
+                magni nihil. Esse consequuntur tenetur earum ex ea quam dolores
+                illo est totam. Labore?
+              </p>
+              <p class="prix">
+                <span class="p">Prix: </span>800 <span>FCFA</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </section>
+
+      <!-----------------------SECTION EXPERT---------------------------->
+
+      <section class="expert" id="expert">
+        <!-- <h1>Section 5</h1>
+        <h2>Expert</h2> -->
+        <div class="contenu">
+          <div class="expert-texte">
+            <h2>Nos <span>E</span>xperts</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="experts">
+            <div class="exp1">
+              <div class="card-expert">
+                <div class="card-exp-img">
+                  <img
+                    src="Images/Cuisinier/derrick-pare-okPdcD03F7g-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-exp-info">
+                  <h2>Prince MOULAKA</h2>
+                  <h3>Chef Exécutif & Créateur culinaire</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem mollitia beatae neque quia natus accusantium
+                    quis, impedit veniam repellendus. Velit blanditiis
+                    laudantium provident pariatur iusto culpa nisi et omnis
+                    iure.
+                  </p>
+                </div>
+              </div>
+              <div class="card-expert">
+                <div class="card-exp-img">
+                  <img
+                    src="Images/Cuisinier/cansu-hangul-ujAg32DKzmo-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-exp-info">
+                  <h2>Sarah NGOULU</h2>
+                  <h3>Chef Pâtissier & Artiste sucrier</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem mollitia beatae neque quia natus accusantium
+                    quis, impedit veniam repellendus. Velit blanditiis
+                    laudantium provident pariatur iusto culpa nisi et omnis
+                    iure.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="exp2">
+              <div class="card-expert">
+                <div class="card-exp-img">
+                  <img
+                    src="Images/Cuisinier/martin-baron-0sbq9Rxcx-c-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-exp-info">
+                  <h2>Naraylvie WAYI</h2>
+                  <h3>Chef de Cuisine & Directeur gastronomique</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem mollitia beatae neque quia natus accusantium
+                    quis, impedit veniam repellendus. Velit blanditiis
+                    laudantium provident pariatur iusto culpa nisi et omnis
+                    iure.
+                  </p>
+                  <p>*****</p>
+                </div>
+              </div>
+              <div class="card-expert">
+                <div class="card-exp-img">
+                  <img
+                    src="Images/Cuisinier/eiliv-aceron-wNQoaYCFcsI-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-exp-info">
+                  <h2>Dieu-Merci TSIMBA</h2>
+                  <h3>Chef Pâtissier & Artiste sucrier</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem mollitia beatae neque quia natus accusantium
+                    quis, impedit veniam repellendus. Velit blanditiis
+                    laudantium provident pariatur iusto culpa nisi et omnis
+                    iure.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
       <!-----------------------SECTION TEMOIGNAGE---------------------------->
       <section class="temoignage">
         <h1>Section 4</h1>
         <h2>Temoignage</h2>
-      </section>
-      <section class="expert">
-        <h1>Section 5</h1>
-        <h2>Expert</h2>
       </section>
       <section class="contact" id="contact">
         <h1>Section 6</h1>
         <h2>Contact</h2>
       </section>
     </main>
-    <footer></footer>
+    <!-----------------------SECTION TEMOIGNAGE---------------------------->
+    <footer>
+      <div class="">
+        <div class=""><p>© class="btn-cta "2026 Projet De Groupe</p></div>
+        <div class=""></div>
+      </div>
+    </footer>
   </body>
 </html>

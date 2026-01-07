@@ -9,6 +9,7 @@
 .img img {
   height: 50px;
 }
+
 nav {
   position: fixed;
   display: flex;
@@ -19,13 +20,14 @@ nav {
   width: 100%;
   font-weight: 500;
   font-size: 1.2em;
-  padding: 7px;
+  padding: 10px 10px;
   flex-wrap: wrap;
   z-index: 50;
 }
 nav a {
   text-decoration: none;
   color: white;
+  font-weight: bolder;
 }
 .K,
 .M {
@@ -90,7 +92,7 @@ nav a {
 .texte h1 {
   color: white;
   text-align: center;
-  font-size: 3em;
+  font-size: 3.5em;
   font-weight: bolder;
 }
 .texte_accueil {
@@ -138,6 +140,7 @@ nav a {
   display: flex;
   padding: 60px;
   justify-content: space-around;
+  overflow: hidden;
 }
 .propos .texte2 {
   padding: 50px;
@@ -170,7 +173,7 @@ nav a {
 }
 /* --------------------------------MENU----------------------------------------- */
 .menu {
-  padding: 40px;
+  padding: 30px;
   /* background-color: yellow;
   color: white; */
 }
@@ -267,6 +270,7 @@ nav a {
   padding-top: 40px;
   margin-top: 40px;
   margin-bottom: 40px;
+  overflow: hidden;
   /* height: 100vh; */
 }
 .expert .contenu {
@@ -347,10 +351,261 @@ nav a {
 }
 /*-------------------------------TEMOIGNAGE----------------------------------------- */
 .temoignage {
-  background-color: purple;
-  color: white;
+  /*  background-color: purple;
+  color: white; */
+  padding: 30px 12px;
 }
+.temoignage .vertical-marquee {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+  height: 550px;
+  z-index: -1;
+}
+.temoignage .vertical-marquee__blurred-circle {
+  display: block;
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  top: -35%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fb911f;
+  filter: blur(64px);
+}
+.temoignage .verticla-marquee__slider {
+  animation: vertical-marquee 3.4s linear infinite;
+}
+@keyframes vertical-marquee {
+  to {
+    transform: translateY(-50%);
+  }
+}
+.temoignage .verticla-marquee__panel {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding: 12px 22px;
+}
+.temoignage .verticla-marquee__card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 22px;
+  border: 2px solid #fb911f;
+  border-radius: 10px;
+}
+.temoignage .verticla-marquee__card-text {
+  color: black;
+  line-height: 1.4;
+  font-style: 18px;
+  margin-bottom: 24px;
+}
+.temoignage .vertical-marquee__green-quotes {
+  color: green;
+}
+.temoignage .vertical-marquee__card-author {
+  font-style: italic;
+  margin-top: auto;
+}
+/*-------------------------------CONTACT----------------------------------------- */
 .contact {
-  background-color: black;
+  /*  background-color: black;
+  color: white; */
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #24232a;
   color: white;
+  text-align: center;
+  /* background-color: white; */
+  align-items: center;
+  overflow: hidden;
+}
+@keyframes animate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.contact .contact-form {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.contact .contact-form::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 400px;
+  height: 500px;
+  background: linear-gradient(0deg, transparent, orange, orange);
+  transform-origin: bottom right;
+  animation: animate 7s linear infinite;
+}
+.contact .contact-form::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 400px;
+  height: 500px;
+  background: linear-gradient(0deg, transparent, blue, purple);
+  transform-origin: bottom right;
+  animation: animate 7s linear infinite;
+  animation-delay: 3s;
+}
+.contact form {
+  position: absolute;
+  inset: 3px;
+  border-radius: 8px;
+  background: #24232a;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact form .inputBox {
+  width: 350px;
+  position: relative;
+  margin-top: 15px;
+}
+.contact form .inputBox input {
+  width: 100%;
+  padding: 15px 10px 10px;
+  background: transparent;
+  border-color: #fb911f;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 1em;
+  outline: none;
+  color: #fb911f;
+  /* text-align: center; */
+}
+.contact form .inputBox textarea,
+input::placeholder {
+  text-align: center;
+}
+.contact form .inputBox textarea {
+  width: 100%;
+  background: transparent;
+  border-color: #fb911f;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 1em;
+  outline: none;
+  /* color: #fb911f; */
+  color: white;
+  /* text-align: center; */
+}
+.contact form .btn-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 7px;
+  /* padding: 10px; */
+  /* background: red; */
+}
+.contact form .btn-form .btn-frm-an,
+.btn-frm-env {
+  font-size: 1.1em;
+  padding: 3px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+  }
+  /* width: 100px; */
+}
+.contact form .btn-form .btn-frm-an {
+  background: red;
+}
+.contact form .btn-form .btn-frm-env {
+  background-color: blue;
+}
+/* .contact form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+
+}
+.contact form label{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.contact form input{
+  font-size: 1em;
+  padding: 5px;
+  border-radius: 5px;
+} */
+/*-------------------------------FOOTER----------------------------------------- */
+footer {
+  padding: 7px;
+  background-color: #fff;
+}
+footer .rs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+footer .rs .cpright {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+footer .rs .reseau-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+footer .reseau-social .web,
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .reseau-social a {
+  text-decoration: none;
+  color: blue;
+}
+footer .reseau-social .github img {
+  width: 80px;
+}
+footer .reseau-social .web img {
+  width: 65px;
+  padding: 3px;
+}
+/* footer .reseau-social img {
+  width: 80px;
+} */
+nav.sticky {
+  padding: 10px 10px;
+  background: #fff;
+  color: #000;
+  box-shadow: 0px 5px 20px black;
+  z-index: 1;
+}
+
+nav.sticky a {
+  color: black; /* ou n'importe quelle couleur au scroll */
+  font-weight: bolder;
 }
